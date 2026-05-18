@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hakkımızda | NIS Madencilik ve İnşaat</title>
+  <meta name="description" content="NIS Madencilik ve İnşaat hakkında bilgi edinin. Misyon, vizyon ve değerlerimiz." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .page-hero {
+      min-height: 42vh; display: flex; align-items: center; justify-content: center;
+      text-align: center; position: relative; overflow: hidden; padding-top: 90px;
+      background: radial-gradient(ellipse at 50% 60%, #1e3a5f 0%, #0d1520 65%);
+    }
+    .page-hero-grid {
+      position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(232,119,34,.04) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(232,119,34,.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .page-hero-content { position: relative; z-index: 2; }
+    .about-page { padding: 80px 5%; }
+    .mission-vision { background: var(--dark2); padding: 80px 5%; }
+    .mv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    .mv-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 20px; padding: 36px; position: relative; overflow: hidden; }
+    .mv-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gradient); }
+    .mv-card-icon { font-size: 40px; margin-bottom: 16px; }
+    .mv-card-title { font-family: 'Bebas Neue', sans-serif; font-size: 28px; margin-bottom: 14px; }
+    .mv-card-title span { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .mv-card-desc { font-size: 14px; color: var(--text-muted); line-height: 1.8; }
+    .values { padding: 80px 5%; background: var(--dark3); }
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 50px; }
+    .value-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 28px; text-align: center; transition: transform .3s, border-color .3s; }
+    .value-card:hover { transform: translateY(-6px); border-color: rgba(232,119,34,.4); }
+    .value-icon { font-size: 38px; margin-bottom: 14px; }
+    .value-title { font-size: 16px; font-weight: 800; margin-bottom: 10px; }
+    .value-desc { font-size: 13px; color: var(--text-muted); line-height: 1.7; }
+    .stats-section { background: var(--dark2); padding: 80px 5%; text-align: center; }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-top: 50px; }
+    .stat-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 36px 20px; }
+    .stat-card .big-num { font-family: 'Bebas Neue', sans-serif; font-size: 52px; color: var(--primary); line-height: 1; }
+    .stat-card .stat-lbl { font-size: 13px; color: var(--text-muted); margin-top: 8px; }
+    @media (max-width: 768px) { .mv-grid { grid-template-columns: 1fr; } .values-grid { grid-template-columns: 1fr; } .stats-grid { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="logo">
+    <div class="logo-icon">N</div>
+    <div class="logo-text">
+      <span class="logo-name">NIS Madencilik</span>
+      <span class="logo-sub">& İnşaat</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="urunler.html">Ürünler</a></li>
+    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+    <li><a href="iletisim.html">İletişim</a></li>
+    <li><a href="iletisim.html" class="btn-nav">Teklif Al</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-grid"></div>
+  <div class="page-hero-content">
+    <span class="section-tag reveal">Hakkımızda</span>
+    <h1 class="section-title reveal" style="font-size:clamp(40px,6vw,72px)">Güçlü Temeller,<br /><span>Güvenilir Çözümler</span></h1>
+    <p class="section-desc reveal" style="margin:12px auto 0;text-align:center;max-width:520px">Yılların deneyimi ve modern üretim anlayışıyla sektörde fark yaratıyoruz</p>
+  </div>
+</div>
+
+<!-- KURUMSAL -->
+<section class="about-page">
+  <div class="container">
+    <div class="about-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center">
+      <div>
+        <span class="section-tag reveal">Kurumsal</span>
+        <h2 class="section-title reveal">Biz Kimiz?</h2>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.85;margin-bottom:20px" class="reveal">
+          NIS Madencilik ve İnşaat, prefabrik beton yapı ürünleri, altyapı ve üstyapı sistemleri alanında faaliyet gösteren köklü bir Türk firmasıdır. Modern üretim tesislerimiz ve uzman mühendis kadromuzla, her ölçekteki projeye kaliteli ve zamanında çözüm üretiyoruz.
+        </p>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.85" class="reveal">
+          TSE belgeli ürünlerimiz ve sıkı kalite kontrol süreçlerimizle; müteahhitler, kamu kurumları ve özel sektör firmalarına güvenilir bir tedarik ortağı olarak hizmet veriyoruz.
+        </p>
+      </div>
+      <div class="reveal" style="position:relative">
+        <div style="border-radius:20px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5)">
+          <img src="images/altyapi.png" alt="NIS Madencilik Üretim" style="width:100%;height:360px;object-fit:cover;display:block" />
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(232,119,34,.12),transparent);border-radius:20px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MİSYON VİZYON -->
+<section class="mission-vision">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:50px">
+      <span class="section-tag reveal">Yön Haritamız</span>
+      <h2 class="section-title reveal">Misyon & <span>Vizyon</span></h2>
+    </div>
+    <div class="mv-grid">
+      <div class="mv-card reveal">
+        <div class="mv-card-icon">🎯</div>
+        <h3 class="mv-card-title"><span>Misyonumuz</span></h3>
+        <p class="mv-card-desc">Türkiye'nin inşaat sektörüne kaliteli, dayanıklı ve uygun maliyetli prefabrik beton ürünleri sunarak; altyapıdan üstyapıya kadar her aşamada müşterilerimizin güvenilir çözüm ortağı olmak.</p>
+      </div>
+      <div class="mv-card reveal">
+        <div class="mv-card-icon">🚀</div>
+        <h3 class="mv-card-title"><span>Vizyonumuz</span></h3>
+        <p class="mv-card-desc">Yenilikçi üretim teknolojileri ve sürdürülebilir iş anlayışıyla, prefabrik beton sektöründe bölgenin lider firması konumuna yükselerek uluslararası pazarlara açılmak.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEĞERLER -->
+<section class="values">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="section-tag reveal">Kurumsal Değerler</span>
+      <h2 class="section-title reveal">İşimizi <span>Yönlendiren</span> Değerler</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="value-icon">🏆</div>
+        <h3 class="value-title">Kalite</h3>
+        <p class="value-desc">TSE standartlarına uygun üretim ve titiz kalite kontrol süreçleriyle üstün ürün kalitesi.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">🤝</div>
+        <h3 class="value-title">Güven</h3>
+        <p class="value-desc">Müşterilerimizle uzun vadeli, şeffaf ve dürüst iş ilişkileri kurarak güven inşa ediyoruz.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">⚡</div>
+        <h3 class="value-title">Hız</h3>
+        <p class="value-desc">Hızlı üretim ve teslimat kapasitemizle projelerinizin zamanında tamamlanmasını sağlarız.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">🌱</div>
+        <h3 class="value-title">Sürdürülebilirlik</h3>
+        <p class="value-desc">Çevre dostu üretim yöntemleriyle geleceğe karşı sorumlu bir iş anlayışı benimsiyoruz.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">💡</div>
+        <h3 class="value-title">Yenilikçilik</h3>
+        <p class="value-desc">Sektörün gelişimine paralel yeni ürün ve teknolojileri sürekli araştırıp uyguluyoruz.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">👥</div>
+        <h3 class="value-title">Müşteri Odaklılık</h3>
+        <p class="value-desc">Her müşterimizin ihtiyacını özel bir çözümle karşılar, memnuniyeti her şeyin üstünde tutarız.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- İSTATİSTİKLER -->
+<section class="stats-section">
+  <div class="container">
+    <span class="section-tag reveal">Rakamlarla NIS</span>
+    <h2 class="section-title reveal">Başarılarımız <span>Konuşuyor</span></h2>
+    <div class="stats-grid">
+      <div class="stat-card reveal">
+        <div class="big-num" data-target="15" data-suffix="+">0+</div>
+        <div class="stat-lbl">Yıl Deneyim</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="big-num" data-target="500" data-suffix="+">0+</div>
+        <div class="stat-lbl">Tamamlanan Proje</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="big-num" data-target="200" data-suffix="+">0+</div>
+        <div class="stat-lbl">Müşteri</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="big-num" data-target="50" data-suffix="+">0+</div>
+        <div class="stat-lbl">Uzman Personel</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo" style="margin-bottom:0">
+        <div class="logo-icon">N</div>
+        <div class="logo-text">
+          <span class="logo-name">NIS Madencilik</span>
+          <span class="logo-sub">& İnşaat</span>
+        </div>
+      </a>
+      <p>Prefabrik beton yapı ürünleri, altyapı ve üstyapı çözümlerinde güvenilir iş ortağınız.</p>
+    </div>
+    <div class="footer-col"><h4>Sayfalar</h4><ul><li><a href="index.html">Ana Sayfa</a></li><li><a href="urunler.html">Ürünler</a></li><li><a href="hakkimizda.html">Hakkımızda</a></li><li><a href="iletisim.html">İletişim</a></li></ul></div>
+    <div class="footer-col"><h4>Ürünler</h4><ul><li><a href="urunler.html#prefabrik">Prefabrik Beton</a></li><li><a href="urunler.html#altyapi">Alt Yapı</a></li><li><a href="urunler.html#ustyapi">Üst Yapı</a></li></ul></div>
+    <div class="footer-col"><h4>İletişim</h4><ul><li><a href="#">📍 Türkiye</a></li><li><a href="#">📞 +90 (XXX) XXX XX XX</a></li><li><a href="#">✉️ info@nismadencilik.com</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 NIS Madencilik ve İnşaat. Tüm hakları saklıdır.</p>
+    <div class="footer-socials">
+      <a href="#" class="social-btn">in</a>
+      <a href="#" class="social-btn">ig</a>
+      <a href="#" class="social-btn">wa</a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

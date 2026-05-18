@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ürünlerimiz | NIS Madencilik ve İnşaat</title>
+  <meta name="description" content="NIS Madencilik ve İnşaat ürün kataloğu – Prefabrik beton, altyapı ve üstyapı ürünleri." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .page-hero {
+      min-height: 42vh; display: flex; align-items: center; justify-content: center;
+      text-align: center; position: relative; overflow: hidden;
+      background: radial-gradient(ellipse at 50% 60%, #1e3a5f 0%, #0d1520 65%);
+      padding-top: 90px;
+    }
+    .page-hero-content { position: relative; z-index: 2; }
+    .page-hero-grid {
+      position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(232,119,34,.04) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(232,119,34,.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .products-page { background: var(--dark); padding: 80px 5%; }
+    .cat-section { margin-bottom: 90px; }
+    .cat-header { display: flex; align-items: center; gap: 20px; margin-bottom: 36px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+    .cat-icon { width: 60px; height: 60px; border-radius: 14px; background: var(--gradient); display: flex; align-items: center; justify-content: center; font-size: 28px; flex-shrink:0; }
+    .cat-title { font-family: 'Bebas Neue', sans-serif; font-size: 38px; line-height: 1; }
+    .cat-title span { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .cat-desc { font-size: 14px; color: var(--text-muted); margin-top: 4px; }
+    .items-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+    .item-card {
+      background: var(--card-bg); border: 1px solid var(--border); border-radius: 14px; padding: 22px;
+      transition: transform .3s, border-color .3s, box-shadow .3s;
+    }
+    .item-card:hover { transform: translateY(-5px); border-color: rgba(232,119,34,.4); box-shadow: 0 12px 40px rgba(0,0,0,.3); }
+    .item-num { font-size: 11px; font-weight: 700; color: var(--primary); letter-spacing: 2px; margin-bottom: 10px; }
+    .item-name { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+    .item-desc { font-size: 13px; color: var(--text-muted); line-height: 1.65; }
+    .item-icon { font-size: 26px; margin-bottom: 12px; }
+    .cat-img { width: 100%; height: 260px; object-fit: cover; border-radius: 14px; margin-bottom: 30px; }
+    @media (max-width: 768px) { .cat-header { flex-direction: column; align-items: flex-start; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="logo">
+    <div class="logo-icon">N</div>
+    <div class="logo-text">
+      <span class="logo-name">NIS Madencilik</span>
+      <span class="logo-sub">& İnşaat</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="urunler.html">Ürünler</a></li>
+    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+    <li><a href="iletisim.html">İletişim</a></li>
+    <li><a href="iletisim.html" class="btn-nav">Teklif Al</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-grid"></div>
+  <div class="page-hero-content">
+    <span class="section-tag reveal">Ürün Kataloğu</span>
+    <h1 class="section-title reveal" style="font-size:clamp(40px,6vw,72px)">Yapı <span>Çözümlerimiz</span></h1>
+    <p class="section-desc reveal" style="margin:12px auto 0;text-align:center;max-width:500px">Prefabrik beton, altyapı ve üstyapı ürünleriyle her projeye kapsamlı çözüm</p>
+  </div>
+</div>
+
+<section class="products-page" id="urunler">
+  <div class="container">
+
+    <!-- PREFABRİK BETON -->
+    <div class="cat-section" id="prefabrik">
+      <div class="cat-header reveal">
+        <div class="cat-icon">🧱</div>
+        <div>
+          <h2 class="cat-title">Prefabrik Beton <span>Yapı Ürünleri</span></h2>
+          <p class="cat-desc">Fabrikasyon ortamda üretilen, yüksek mukavemetli yapı elemanları</p>
+        </div>
+      </div>
+      <img src="images/prefabrik.png" alt="Prefabrik Beton Yapı Ürünleri" class="cat-img reveal" />
+      <div class="items-grid">
+        <div class="item-card reveal"><div class="item-icon">🏛️</div><div class="item-num">PBY-01</div><div class="item-name">Prefabrik Kolon</div><div class="item-desc">Çeşitli kesit boyutlarında, yüksek dayanımlı betonarme kolonlar.</div></div>
+        <div class="item-card reveal"><div class="item-icon">➖</div><div class="item-num">PBY-02</div><div class="item-name">Prefabrik Kiriş</div><div class="item-desc">T, L ve dikdörtgen kesitli, farklı açıklıklara göre tasarlanmış kirişler.</div></div>
+        <div class="item-card reveal"><div class="item-icon">▭</div><div class="item-num">PBY-03</div><div class="item-name">Prefabrik Döşeme</div><div class="item-desc">Asmolen, TT ve Hollow-core döşeme sistemleri.</div></div>
+        <div class="item-card reveal"><div class="item-icon">🔲</div><div class="item-num">PBY-04</div><div class="item-name">Perde Duvar</div><div class="item-desc">Cephe ve iç bölme için yalıtımlı sandviç perde paneller.</div></div>
+        <div class="item-card reveal"><div class="item-icon">🔺</div><div class="item-num">PBY-05</div><div class="item-name">Çatı Kirişi</div><div class="item-desc">Beşik ve düz çatı sistemleri için prefabrik çatı kirişleri.</div></div>
+        <div class="item-card reveal"><div class="item-icon">🧩</div><div class="item-num">PBY-06</div><div class="item-name">Özel Elemanlar</div><div class="item-desc">Projeye özel tasarım ve ölçülerde prefabrik beton elemanlar.</div></div>
+      </div>
+    </div>
+
+    <!-- ALT YAPI -->
+    <div class="cat-section" id="altyapi">
+      <div class="cat-header reveal">
+        <div class="cat-icon">🚧</div>
+        <div>
+          <h2 class="cat-title">Alt Yapı <span>Ürünleri</span></h2>
+          <p class="cat-desc">Kentsel ve endüstriyel altyapının güçlü temelleri</p>
+        </div>
+      </div>
+      <img src="images/altyapi.png" alt="Alt Yapı Ürünleri" class="cat-img reveal" />
+      <div class="items-grid">
+        <div class="item-card reveal"><div class="item-icon">⭕</div><div class="item-num">ALT-01</div><div class="item-name">Beton Boru</div><div class="item-desc">TS 821 standardında, çeşitli çaplarda betonarme boru sistemleri.</div></div>
+        <div class="item-card reveal"><div class="item-icon">🔳</div><div class="item-num">ALT-02</div><div class="item-name">Muayene Bacası</div><div class="item-desc">Standart ve özel ölçülerde prefabrik muayene bacaları.</div></div>
+        <div class="item-card reveal"><div class="item-icon">〰️</div><div class="item-num">ALT-03</div><div class="item-name">Drenaj Kanalı</div><div class="item-desc">U profil ve kapalı drenaj beton kanal sistemleri.</div></div>
+        <div class="item-card reveal"><div class="item-icon">🧱</div><div class="item-num">ALT-04</div><div class="item-name">İstinat Duvarı</div><div class="item-desc">Prefabrik L ve T tipi istinat duvarı elemanları.</div></div>
+        <div class="item-card reveal"><div class="item-icon">📦</div><div class="item-num">ALT-05</div><div class="item-name">Depolama Haznesi</div><div class="item-desc">Su, atıksu ve yağmursuyu için prefabrik beton hazneler.</div></div>
+        <div class="item-card reveal"><div class="item-icon">🛤️</div><div class="item-num">ALT-06</div><div class="item-name">Bordür & Tretuvar</div><div class="item-desc">Beton bordür, tretuvar ve yol kenarı elemanları.</div></div>
+      </div>
+    </div>
+
+    <!-- ÜST YAPI -->
+    <div class="cat-section" id="ustyapi">
+      <div class="cat-header reveal">
+        <div class="cat-icon">🏗️</div>
+        <div>
+          <h2 class="cat-title">Üst Yapı <span>Ürünleri</span></h2>
+          <p class="cat-desc">Estetik ve fonksiyonelliği buluşturan üstyapı çözümleri</p>
+        </div>
+      </div>
+      <img src="images/ustyapi.png" alt="Üst Yapı Ürünleri" class="cat-img reveal" />
+      <div class="items-grid">
+        <div class="item-card reveal"><div class="item-icon">🪟</div><div class="item-num">UST-01</div><div class="item-name">Cephe Paneli</div><div class="item-desc">Mimari ve teknik gereksinimlere uygun prefabrik cephe panelleri.</div></div>
+        <div class="item-card reveal"><div class="item-icon">🪜</div><div class="item-num">UST-02</div><div class="item-name">Tribün Basamağı</div><div class="item-desc">Stadyum, amfi ve tribün sistemleri için prefabrik basamaklar.</div></div>
+        <div class="item-card reveal"><div class="item-icon">🚶</div><div class="item-num">UST-03</div><div class="item-name">Merdiven Elemanı</div><div class="item-desc">Hazır betonarme merdiven basamakları ve podestler.</div></div>
+        <div class="item-card reveal"><div class="item-icon">🏢</div><div class="item-num">UST-04</div><div class="item-name">Balkon & Platform</div><div class="item-desc">Prefabrik balkon döşemesi ve platform elemanları.</div></div>
+        <div class="item-card reveal"><div class="item-icon">🛣️</div><div class="item-num">UST-05</div><div class="item-name">Köprü Elemanı</div><div class="item-desc">Üstyapı köprü kirişleri ve yol plakları.</div></div>
+        <div class="item-card reveal"><div class="item-icon">⚙️</div><div class="item-num">UST-06</div><div class="item-name">Endüstriyel Zemin</div><div class="item-desc">Fabrika ve depo zeminleri için prefabrik beton zemin kaplamaları.</div></div>
+      </div>
+    </div>
+
+    <div style="text-align:center;padding:40px 0;" class="reveal">
+      <p style="font-size:16px;color:var(--text-muted);margin-bottom:20px">Aradığınız ürünü bulamadınız mı? Özel üretim için bize ulaşın.</p>
+      <a href="iletisim.html" class="btn-primary">Teklif İste →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo" style="margin-bottom:0">
+        <div class="logo-icon">N</div>
+        <div class="logo-text">
+          <span class="logo-name">NIS Madencilik</span>
+          <span class="logo-sub">& İnşaat</span>
+        </div>
+      </a>
+      <p>Prefabrik beton yapı ürünleri, altyapı ve üstyapı çözümlerinde güvenilir iş ortağınız.</p>
+    </div>
+    <div class="footer-col"><h4>Sayfalar</h4><ul><li><a href="index.html">Ana Sayfa</a></li><li><a href="urunler.html">Ürünler</a></li><li><a href="hakkimizda.html">Hakkımızda</a></li><li><a href="iletisim.html">İletişim</a></li></ul></div>
+    <div class="footer-col"><h4>Kategoriler</h4><ul><li><a href="#prefabrik">Prefabrik Beton</a></li><li><a href="#altyapi">Alt Yapı</a></li><li><a href="#ustyapi">Üst Yapı</a></li></ul></div>
+    <div class="footer-col"><h4>İletişim</h4><ul><li><a href="#">📍 Türkiye</a></li><li><a href="#">📞 +90 (XXX) XXX XX XX</a></li><li><a href="#">✉️ info@nismadencilik.com</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 NIS Madencilik ve İnşaat. Tüm hakları saklıdır.</p>
+    <div class="footer-socials">
+      <a href="#" class="social-btn">in</a>
+      <a href="#" class="social-btn">ig</a>
+      <a href="#" class="social-btn">wa</a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
