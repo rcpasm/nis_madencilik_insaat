@@ -81,3 +81,54 @@ if (form) {
     setTimeout(() => { btn.textContent = 'Mesaj Gönder'; btn.style.background = ''; form.reset(); }, 3000);
   });
 }
+
+// Hero Carousel
+const heroCarousel = document.getElementById('heroCarousel');
+if (heroCarousel) {
+  const slides = heroCarousel.querySelectorAll('.hc-slide');
+  const dots = heroCarousel.querySelectorAll('.hc-dot');
+  let currentSlide = 0;
+  
+  function goToSlide(index) {
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    currentSlide = index;
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+  }
+  
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => goToSlide(parseInt(dot.dataset.i)));
+  });
+  
+  setInterval(() => {
+    const nextSlide = (currentSlide + 1) % slides.length;
+    goToSlide(nextSlide);
+  }, 4000);
+}
+
+// Lightbox
+const galleryItems = document.querySelectorAll('.gallery-item img');
+const lightbox = document.getElementById('lightbox');
+if (lightbox && galleryItems.length > 0) {
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxClose = document.getElementById('lightboxClose');
+  
+  galleryItems.forEach(img => {
+    img.parentElement.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  
+  const closeBtn = () => {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+  
+  lightboxClose.addEventListener('click', closeBtn);
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeBtn();
+  });
+}
